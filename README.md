@@ -2,6 +2,11 @@
 
 ![Leo's GitHub stats](https://github-readme-stats.vercel.app/api?username=leowzz&show_icons=true)
 
+<p align="center">
+  <a href="https://github.com/leowzz">
+    <img src="https://skillicons.dev/icons?perline=10&i=python,fastapi,docker,mysql,ubuntu,java,go,jenkins,nginx" />
+  </a>
+</p>
 <!-- ![Leo's GitHub stats](https://github-readme-stats.vercel.app/api?username=leowzz&show_icons=true&theme=dark) -->
 
 <!-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=leowzz&repo=Emp_ms)](https://github.com/leowzz/Emp_ms)
