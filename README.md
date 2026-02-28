@@ -9,14 +9,11 @@
 
 
 
-![Leo's GitHub stats](https://github-readme-stats.vercel.app/api?username=leowzz&show_icons=true)
+<!-- ![Leo's GitHub stats](https://github-readme-stats.vercel.app/api?username=leowzz&show_icons=true) -->
 
 <!-- ![Leo's GitHub stats](https://github-readme-stats.vercel.app/api?username=leowzz&show_icons=true&theme=dark) -->
 
 <!-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=leowzz&repo=Emp_ms)](https://github.com/leowzz/Emp_ms)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=leowzz&repo=lanzouTool)](https://github.com/leowzz/lanzouTool) -->
-
 
 <!-- [<img src="https://github-readme-stats.vercel.app/api/pin/?username=leowzz&repo=Emp_ms" alt="Readme Card" style="zoom:80%;" />](https://github.com/leowzz/github-readme-stats) -->
 
