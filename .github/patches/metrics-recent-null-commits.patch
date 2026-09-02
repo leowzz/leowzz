@@ -1,11 +1,26 @@
 diff --git a/source/plugins/languages/analyzer/recent.mjs b/source/plugins/languages/analyzer/recent.mjs
 --- a/source/plugins/languages/analyzer/recent.mjs
 +++ b/source/plugins/languages/analyzer/recent.mjs
-@@ -67,6 +67,6 @@ export class RecentAnalyzer extends Analyzer {
+@@ -66,14 +66,19 @@ export class RecentAnalyzer extends Analyzer {
+     const patches = [
        ...await Promise.allSettled(
          commits
 -          .flatMap(({payload}) => payload.commits)
-+          .flatMap(({payload}) => payload.commits ?? [])
-           .filter(({committer}) => filters.text(committer?.email, this.authoring, {debug: false}))
-           .map(commit => commit.url)
+-          .filter(({committer}) => filters.text(committer?.email, this.authoring, {debug: false}))
+-          .map(commit => commit.url)
++          .flatMap(({payload, repo}) => {
++            if (payload.commits?.length)
++              return payload.commits.map(({url}) => url)
++            if (payload.head && repo.url)
++              return [`${repo.url}/commits/${payload.head}`]
++            return []
++          })
            .map(async commit => (await this.rest.request(commit)).data),
+       ),
+     ]
+       .filter(({status}) => status === "fulfilled")
+       .map(({value}) => value)
++      .filter(({commit}) => filters.text((commit.committer ?? commit.author)?.email, this.authoring, {debug: false}))
+       .filter(({parents}) => parents.length <= 1)
+       .map(({sha, commit: {message, committer}, verification, files}) => ({
+         sha,
