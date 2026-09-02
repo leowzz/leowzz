@@ -1,0 +1,29 @@
+name: Languages metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  languages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate languages metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: leowzz
+          base: ""
+          plugin_languages: yes
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 1%
+          plugin_languages_other: yes
