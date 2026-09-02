@@ -13,10 +13,31 @@ permissions:
 
 jobs:
   languages:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Checkout Metrics source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: lowlighter/metrics
+          ref: 366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+          path: .metrics
+          persist-credentials: false
+
+      - name: Patch malformed recent activity events
+        run: git -C .metrics apply ../.github/patches/metrics-recent-null-commits.patch
+
+      - name: Build patched Metrics image from pinned digest
+        run: >-
+          docker build --pull=false
+          --tag metrics:forked-3.35.0-beta
+          --file .github/metrics/Dockerfile
+          .metrics
+
       - name: Generate languages metrics
-        uses: lowlighter/metrics@latest
+        uses: ./.metrics
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
