@@ -32,8 +32,8 @@ Vibe coder and industrial-scale token consumer.
 ### My Statistics
 
 <p>
-  <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=leowzz&amp;count_private=false&amp;show_icons=true&amp;disable_animations=true&amp;card_width=440&amp;bg_color=00000000&amp;border_radius=6&amp;border_color=353A3F&amp;title_color=DFE2E6&amp;text_color=AEB5BC&amp;icon_color=3955CD&amp;cache_seconds=43200" alt="Leo's GitHub stats">
-  <img height="180" src="https://github-readme-stats-steel-omega.vercel.app/api/top-langs/?username=leowzz&amp;count_private=false&amp;hide=typescript,javascript,html,css&amp;card_width=370&amp;show_icons=true&amp;disable_animations=true&amp;layout=compact&amp;bg_color=00000000&amp;border_radius=6&amp;border_color=353A3F&amp;title_color=DFE2E6&amp;text_color=AEB5BC&amp;icon_color=3955CD&amp;cache_seconds=43200" alt="Leo's programming language usage">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=leowzz&amp;count_private=false&amp;show_icons=true&amp;disable_animations=true&amp;card_width=440&amp;line_height=20&amp;bg_color=00000000&amp;border_radius=6&amp;border_color=353A3F&amp;title_color=DFE2E6&amp;text_color=AEB5BC&amp;icon_color=3955CD&amp;cache_seconds=43200" alt="Leo's GitHub stats">
+  <img src="https://github-readme-stats-steel-omega.vercel.app/api/top-langs/?username=leowzz&amp;count_private=false&amp;hide=typescript,javascript,html,css&amp;card_width=440&amp;show_icons=true&amp;disable_animations=true&amp;layout=compact&amp;bg_color=00000000&amp;border_radius=6&amp;border_color=353A3F&amp;title_color=DFE2E6&amp;text_color=AEB5BC&amp;icon_color=3955CD&amp;cache_seconds=43200" alt="Leo's programming language usage">
 </p>
 
 </div>
