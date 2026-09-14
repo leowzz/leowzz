@@ -12,23 +12,6 @@ distributed systems, and architecture that scales.
 
 Vibe coder and industrial-scale token consumer.
 
-### Stack
-
-**Backend**<br>
-`Python` · `FastAPI` · `SQLAlchemy` · `gRPC` · `Dramatiq`
-
-**Data**<br>
-`MySQL` · `PostgreSQL` · `Redis` · `Elasticsearch` · `ByteHouse`
-
-**Infrastructure**<br>
-`Kubernetes` · `Docker` · `Linux` · `Aliyun` · `Volcengine`
-
-**Engineering**<br>
-`Distributed Systems` · `Service Architecture` · `Observability` · `Performance`
-
-**Beyond Backend**<br>
-`Go` · `Rust` · `TypeScript` · `React` · `Tauri` · `C++`
-
 ### My Statistics
 
 <p>
